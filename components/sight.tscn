@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgp8rhk0vvwr1"]
+
+[ext_resource type="Script" uid="uid://v5p263ya2sdm" path="res://components/sight.gd" id="1_hc2er"]
+
+[node name="Sight" type="Area2D"]
+script = ExtResource("1_hc2er")
+mask = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]

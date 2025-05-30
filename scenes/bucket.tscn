@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://im2yiy7t7ik5"]
+
+[ext_resource type="Texture2D" uid="uid://ciwp28x3a5kfe" path="res://assets/tilesheet.png" id="1_ojsi1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4mj0c"]
+size = Vector2(42, 42)
+
+[node name="Bucket" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ojsi1")
+region_enabled = true
+region_rect = Rect2(640, 384, 64, 64)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_4mj0c")
